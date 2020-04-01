@@ -4,6 +4,10 @@ VCS_OPTIONS += -debug_all
 VCS_OPTIONS += +v2k
 VCS_OPTIONS += -sverilog
 VCS_OPTIONS += -l compile.log
+VCS_OPTIONS += -cpp g++-4.8
+VCS_OPTIONS += -cc gcc-4.8
+VCS_OPTIONS += -LDFLAGS
+VCS_OPTIONS += -Wl,--no-as-needed
 
 ifdef GATES
 VCS_OPTIONS += -timescale=1ps/1ps
